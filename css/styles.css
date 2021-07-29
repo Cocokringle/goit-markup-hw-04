@@ -126,9 +126,17 @@ img {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 .link-nav-icon{
   margin-right: 10px;
+  fill: var(--secondary-text-color);
+}
+
+.link-nav-icon:hover,
+.link-nav-icon:focus{
+  fill: var(--accent-color);
 }
 .link.current {
   color: var(--accent-color);
@@ -199,6 +207,20 @@ img {
 .advantages .advantages-box + .advantages-box {
   margin-left: 30px;
 }
+.advantage-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--secondary-fon-color);
+  margin-bottom: 30px;
+}
+.advantage-icon{ 
+  
+}
+
 /* Чем мы занимаемся */
 .work-list {
   display: flex;
@@ -217,7 +239,76 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #fff;
 }
+.social-link-list{
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.social-link{
+  display: block;
+  background-color: #fff;
+  color: #AFB1B8;
+  border-radius: 50%;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+.social-icon-box {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.social-link-list .social-link-item + .social-link-item {
+  margin-left: 10px;
+}
+.social-icon {
+  fill: currentColor;
+}
+/* Постоянные клиенты */
+.clients-list{
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 215px;
+  padding-right: 215px;
+  justify-content: center;
+}
+.clients-list .clients-item + .clients-item {
+  margin-left: 30px;
+}
+.clients-link {
+  display: block;
+  background-color: #fff;
+  color: #AFB1B8;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+
+}
+.clients-link:hover,
+.clients-link:focus{
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+.clients-box {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+.clients-logo {
+  fill: currentColor;
+}
+
 /* Оформление текста*/
 .text-title {
   color: var(--primary-text-color);
@@ -261,7 +352,7 @@ img {
   line-height: 1.2;
   text-align: center;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 }
 /* Футер */
 .footer {
