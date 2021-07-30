@@ -74,7 +74,7 @@ img {
   margin-right: 93px;
 }
 .logo-white {
-  color: #ffffff;
+  color: var(--primary-white-color);
   text-decoration: none;
 
   font-family: Raleway, sans-serif;
@@ -239,7 +239,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: #fff;
+  background-color: var(--primary-white-color);
 }
 .social-link-list{
   display: flex;
@@ -250,14 +250,14 @@ img {
 }
 .social-link{
   display: block;
-  background-color: #fff;
+  background-color: var(--primary-white-color);
   color: #AFB1B8;
   border-radius: 50%;
 }
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--primary-white-color);
 }
 .social-icon-box {
   width: 44px;
@@ -287,7 +287,7 @@ img {
 }
 .clients-link {
   display: block;
-  background-color: #fff;
+  background-color: var(--primary-white-color);
   color: #AFB1B8;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -318,6 +318,10 @@ img {
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 10px;
+}
+.white {
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
 }
 .text {
   color: var(--secondary-text-color);
@@ -385,6 +389,56 @@ img {
 }
 .contacts-box .address + .address {
   margin-top: 9px;
+}
+.contacts-box {
+  justify-content: flex-start;
+}
+/* Присоеденяйтесь */
+.join{
+  /* display: flex;
+  justify-content: center; */
+  min-width: 206px;
+  min-height: 80px;
+  margin-left: 70px;
+}
+.social-link-list-join {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+.social-link-join {
+  display: block;
+  background-color: rgba(100%, 100%, 100%, 10%);
+  color: #fff;
+  border-radius: 50%;
+}
+
+.social-link-join:hover,
+.social-link-join:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.social-icon-box-join {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.social-link-list-join .social-link-item-join +.social-link-item-join {
+  margin-left: 10px;
+}
+
+.social-icon-join {
+  fill: currentColor;
+}
+.footer-flex{
+  display: flex;
 }
 /* Фильтр страници портфолио */
 .filter {
