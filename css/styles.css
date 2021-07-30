@@ -439,6 +439,7 @@ img {
 }
 .footer-flex{
   display: flex;
+  align-items: baseline;
 }
 /* Фильтр страници портфолио */
 .filter {
