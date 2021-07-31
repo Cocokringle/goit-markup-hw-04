@@ -120,7 +120,7 @@ img {
 }
 .link-nav {
   color: var(--secondary-text-color);
-
+  /* fill: var(--secondary-text-color); */
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -131,13 +131,9 @@ img {
 }
 .link-nav-icon{
   margin-right: 10px;
-  fill: var(--secondary-text-color);
+  fill: currentColor;
 }
 
-.link-nav-icon:hover,
-.link-nav-icon:focus{
-  fill: var(--accent-color);
-}
 .link.current {
   color: var(--accent-color);
 }
@@ -148,9 +144,15 @@ img {
 .contacts .contacts-item + .contacts-item {
   margin-left: 50px;
 }
-.contacts .link-nav:focus,
-.contacts .link-nav:hover {
+.link-nav:focus,
+.link-nav:hover  {
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.link-nav:focus .link-nav-icon,
+.link-nav:hover .link-nav-icon{
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* Герой */
