@@ -260,7 +260,7 @@ p {
   margin-right: auto;
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url("../images/hero-background.png");
+    url("../images/people-office.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -539,7 +539,7 @@ p {
 }
 
 .social-media-text {
-  color: var(--color-light);
+  color: var(--color-white);
   font-weight: 500;
   margin-bottom: 16px;
 }
