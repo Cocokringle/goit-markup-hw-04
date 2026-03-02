@@ -319,7 +319,6 @@ p {
 
 .team-name {
   color: var(--color-dark);
-  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -339,6 +338,26 @@ p {
 
 .team-person-info-container {
   padding: 32px 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.team-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-media-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-brand-primary);
+  border-radius: 100%;
 }
 
 .portfolio-title {
@@ -404,4 +423,32 @@ p {
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
+}
+
+.footer-social-media-list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-media-text {
+  font-weight: 500;
+}
+
+.footer-social-media-block{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-container{
+  display: flex;
+  gap: 120px;
+
+}
+
+.footer-general-info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
